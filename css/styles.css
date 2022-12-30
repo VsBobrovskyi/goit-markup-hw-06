@@ -411,6 +411,7 @@ a:focus span {
 .media {
   display: flex;
   color: var(--light-bgc-color);
+  font-weight: 500;
   font-size: 16px;
   margin-bottom: 16px;
 }
@@ -626,9 +627,9 @@ a:focus span {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 1.25px solid #2E2F42;
-border-radius: 2px;
-margin-right: 8px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
 .input-chek:focus + .vector {
@@ -636,6 +637,69 @@ margin-right: 8px;
   transition: border-color var(--transition);
 }
 
+/**----------------------- foter-------------------- form **/
+
+.footer-form {
+  display: block;
+  width: 453px;
+  height: 80px;
+  margin-left: 80px;
+}
+
+.footer-button {
+  display: flex;
+  gap: 16px;
+  /* align-self: center; */
+  width: 165px;
+  height: 40px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  transition: background-color var(--transition);
+  padding: 8px 24px;
+}
+
+.footer-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  line-height: 1.5;
+}
+
+.footer-button.primary:hover {
+  background-color: var(--button-activ-color);
+}
+
+.footer-input {
+  color: var(--white-color);
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border-radius: 4px;
+  padding-left: 16px;
+  transition: border-color var(--transition);
+}
+
+.footer-input:focus {
+  border-color: var(--button-activ-color);
+}
+
+.footer-input::placeholder {
+  font-size: 12px;
+  line-height: 20;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* ? Приклад
 

@@ -350,6 +350,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -392,11 +393,29 @@
               </li>
             </ul>
           </div>
+          <form class="footer-form">
+            <p class="media">Subscribe</p>
+            <div class="footer-label">
+              <label>
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="user_email"
+                  placeholder="E-mail"
+                  required
+              /></label>
+              <button type="submit" class="footer-button primary">
+                Subscribe<svg width="24px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
 
-      <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close" data-modal-close>
           <svg width="8px" height="8px">
@@ -404,45 +423,71 @@
           </svg>
         </button>
         <form class="modal-form">
-          <p class="modal-text">Leave your contacts and we will call you back</p>
-          <label class="modal-form-field">  
-          <span class="modal-input-text">Name</span>
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field">
+            <span class="modal-input-text">Name</span>
             <span class="modal-form-icon">
-              <input class="modal-form-input" type="text" name="user_name" required minlength="2">
-            <svg class="modal-icon" width="18px" height="24px">
-              <use href="./images/symbol-defs.svg#name"></use>
-            </svg>
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                required
+                minlength="2"
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#name"></use>
+              </svg>
             </span>
           </label>
 
-          <label class="modal-form-field">  
-          <span class="modal-input-text">Phone</span>
-          <span class="modal-form-icon">
-            <input class="modal-form-input" type="tel" name="user_phone" required>
-            <svg class="modal-icon" width="18px" height="24px">
-              <use href="./images/symbol-defs.svg#phone"></use>
-            </svg>
-          </span>
+          <label class="modal-form-field">
+            <span class="modal-input-text">Phone</span>
+            <span class="modal-form-icon">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user_phone"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+            </span>
           </label>
 
-          <label class="modal-form-field">  
-          <span class="modal-input-text">Email</span>
-          <span class="modal-form-icon">
-            <input class="modal-form-input" type="email" name="user_email" required>
-            <svg class="modal-icon" width="18px" height="24px">
-              <use href="./images/symbol-defs.svg#email"></use>
-            </svg>
-          </span>
+          <label class="modal-form-field">
+            <span class="modal-input-text">Email</span>
+            <span class="modal-form-icon">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user_email"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#email"></use>
+              </svg>
+            </span>
           </label>
 
-          <label class="modal-comment-field"> <span class="modal-input-text">Comment</span>
-            <textarea class="field-comment" name="user_comment" placeholder="Text input"></textarea>
+          <label class="modal-comment-field">
+            <span class="modal-input-text">Comment</span>
+            <textarea
+              class="field-comment"
+              name="user_comment"
+              placeholder="Text input"
+            ></textarea>
           </label>
 
-          <label class="modal-check"> 
-            <input class="input-chek" type="checkbox" name="user_policy">
+          <label class="modal-check">
+            <input class="input-chek" type="checkbox" name="user_policy" />
             <span class="vector"></span>
-            <span class="modal-chek-text">I accept the terms and conditions of the <a href="#"><span class="policy">Privacy Policy</span></a></span>
+            <span class="modal-chek-text"
+              >I accept the terms and conditions of the
+              <a href="#"><span class="policy">Privacy Policy</span></a></span
+            >
           </label>
 
           <button type="submit" class="modal-button primary">Send</button>
