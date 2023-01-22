@@ -100,7 +100,7 @@ body {
 
 /* без фіксованої шапки прибираєм паддінг що дорівнює висоті хедера*/
 
-.section.indent {
+.section-indent {
   padding-top: 0;
 }
 
@@ -241,6 +241,8 @@ a:focus span {
   height: 603px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 192px;
+  padding-bottom: 192px;
   text-align: center;
   background-color: var(--dark-text-color);
   background-image: linear-gradient(
@@ -253,10 +255,10 @@ a:focus span {
   background-position: center;
 }
 
-.section.hero {
+/* .section.hero {
   padding-top: 192px;
   padding-bottom: 192px;
-}
+} */
 
 .hero-title {
   margin-top: 0;
